@@ -1,5 +1,4 @@
 import random
-import numpy
 
 
 class Graph:
@@ -85,7 +84,6 @@ def fm_algorithm(graph, max_iterations=100):
 
         # compute the gains for all vertices in the best partition
         gains = {v: compute_gain(graph, from_partition, to_partition, v) for v in from_partition}
-        print("Iteration " + str(i) + ": cut size = " + str(cut_size) + ", gains = " + str(gains))
 
         # sort the vertices by gain for all vertices in the best partition
         sorted_vertices = sorted(gains, key=gains.get, reverse=True)
@@ -129,10 +127,10 @@ def load_data(file_path: str):
                 vertex_list.append(v)
             edges.append((u, v))
 
-    graph = Graph(vertex_list)
+    _graph = Graph(vertex_list)
     for edge in edges:
-        graph.add_edge(edge[0], edge[1])
-    return graph
+        _graph.add_edge(edge[0], edge[1])
+    return _graph
 
 
 if __name__ == "__main__":
@@ -140,7 +138,7 @@ if __name__ == "__main__":
     print(graph.__len__())
     print(graph.vertices)
     print(graph.adj_list)
-    _partition1, _partition2_, cut_size = fm_algorithm(graph)
-    print("Final partition cost: " + str(cut_size))
+    _partition1, _partition2_, _cut_size = fm_algorithm(graph)
+    print("Final partition cost: " + str(_cut_size))
     print("Partition 1: " + str(_partition1))
     print("Partition 2: " + str(_partition2_))
