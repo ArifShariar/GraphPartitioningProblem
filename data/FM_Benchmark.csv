@@ -1,0 +1,7 @@
+Number Of Vertices,Number of Edges,Time (micro seconds),Best Partition Cost
+10,11,673,3
+50,612,203653,259
+100,990,2904382,368
+100,1237,3462579,488
+100,2475,4526535,1072
+500,5000,468676758,1737
