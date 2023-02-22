@@ -2,7 +2,7 @@
 The graph partition problem is a problem in computer science in which we are given a graph and a positive number *k*, and the goal is to partition the vertices of the graph in to *k* disjoint sets such that the sum of the weights of the cut edges are minimized.
 
 ### Solution Approaches
-There are many solution approaches to Graph Paritioning Problem. In this repository, we include the solution approach of Kernighan-Lin Algorithm (KL) and Fiduccia-Mattheyeses Algorithm (FM).
+There are many solution approaches to Graph Partitioning Problem. In this repository, we include the solution approach of Kernighan-Lin Algorithm (KL) and Fiduccia-Mattheyeses Algorithm (FM).
 KL algorithm is implemented in Python and FM algorithm is implemented in CPP. 
 
 ### How To Run Codes
