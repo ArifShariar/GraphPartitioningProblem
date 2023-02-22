@@ -1,7 +1,7 @@
 import pandas
 import matplotlib.pyplot as plt
 # read csv file
-df = pandas.read_csv('../data/FM_Benchmark.csv')
+df = pandas.read_csv('../data/FM_Benchmark_2.csv')
 print(df.head())
 
 # plot graph of number of vertices vs Time
