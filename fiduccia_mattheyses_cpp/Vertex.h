@@ -13,7 +13,7 @@ public:
     Vertex();
     Vertex(string name);
     string name;
-    int gain;
+    int gain{};
     string color = "";
     int distance = numeric_limits<int>::max();
     VertexPtr parent;

@@ -126,7 +126,7 @@ vector<int> Graph::initializeGain(vector<bool> bitvector) {
                     gain++;
             }
         }
-        if (bitvector.at(i) == false)
+        if (!bitvector.at(i))
             initializeBucketSort(i, gain, "left");
         else
             initializeBucketSort(i, gain, "right");
